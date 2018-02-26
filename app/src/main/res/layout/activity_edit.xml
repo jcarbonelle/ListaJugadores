@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.uninorte.listajugadores.EditActivity">
+
+    <EditText
+        android:id="@+id/tvnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <EditText
+        android:id="@+id/tvap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <EditText
+        android:id="@+id/tvpos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Posición"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark"
+            android:checked="false"
+            android:text="ToggleButton"
+            android:textColor="@android:color/holo_orange_light"
+            android:textOff="No convocado"
+            android:textOn="Si convocado" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tvedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Edad"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="guardarDatos"
+        android:text="Guardar"
+        android:textColor="@android:color/holo_orange_light" />
+</LinearLayout>
